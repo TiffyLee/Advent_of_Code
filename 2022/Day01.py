@@ -1,6 +1,6 @@
 """
 author: Tiffany Lee
-file: /Users/tiffanylee/Downloads/Personal Projects/Advent_of_Code/2022/InputFiles_2022/Day01_Input
+file: /Users/tiffanylee/Downloads/Personal Projects/Advent_of_Code/2022/InputFiles_2022/Day01_Input.txt
 
 --- Day 1: Calorie Counting ---
 Santa's reindeer typically eat regular reindeer food, but they need a lot
@@ -79,7 +79,7 @@ How many Calories are those Elves carrying in total?
 
 """
 def main():
-    filepath = "/Users/tiffanylee/Downloads/Personal Projects/Advent_of_Code/2022/InputFiles_2022/Day01_Input"
+    filepath = "/Users/tiffanylee/Downloads/Personal Projects/Advent_of_Code/2022/InputFiles_2022/Day01_Input.txt"
     info = [line.strip() for line in open(filepath)]
     calories = []
 

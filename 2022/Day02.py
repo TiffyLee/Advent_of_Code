@@ -1,6 +1,6 @@
 """
 author: Tiffany Lee
-file: /Users/tiffanylee/Downloads/Personal Projects/Advent_of_Code/2022/InputFiles_2022/Day02_Input
+file: /Users/tiffanylee/Downloads/Personal Projects/Advent_of_Code/2022/InputFiles_2022/Day02_Input.txt
 
 --- Day 2: Rock Paper Scissors ---
 The Elves begin to set up camp on the beach. To decide whose tent gets to be
@@ -124,7 +124,7 @@ def part2(info):
 
 
 def main():
-    filepath = "/Users/tiffanylee/Downloads/Personal Projects/Advent_of_Code/2022/InputFiles_2022/Day02_Input"
+    filepath = "/Users/tiffanylee/Downloads/Personal Projects/Advent_of_Code/2022/InputFiles_2022/Day02_Input.txt"
     info = [line.strip() for line in open(filepath)]
     part1(info)
     part2(info)
