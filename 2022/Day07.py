@@ -155,11 +155,13 @@ def main():
                     dirSizes[key] = int(cmd[0])
                 else:
                     dirSizes[key] += int(cmd[0])
+
     dirSum = 0
     dirName = []
     dirDel = ""
     sizeDel = 70000000 + 30000000
     freeUp = dirSizes["/"] - 40_000_000
+
     for key, value in dirSizes.items():
         if value <= 100000:
             dirName.append(key)
