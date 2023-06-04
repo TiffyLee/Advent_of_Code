@@ -173,9 +173,9 @@ def main():
         part1(mover9000, num, toC, fromC)
         part2(mover9001, num, toC, fromC)
     print("Part One: After the rearrangement procedure completes, "
-          + "what crate ends up on top of each stack?"
+          + "what crate ends up on top of each stack? (CrateMover9000)"
           + "\nANSWER: " + "".join(top[0] for top in mover9000 if len(top) > 0))
     print("\nPart Two: After the rearrangement procedure completes, "
-          + "what crate ends up on top of each stack?"
+          + "what crate ends up on top of each stack? (CrateMover9001)"
           + "\nANSWER: " + "".join(top[0] for top in mover9001 if len(top) > 0))
 main()
