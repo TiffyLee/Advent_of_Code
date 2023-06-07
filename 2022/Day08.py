@@ -115,6 +115,8 @@ def part1(grid):
 
 def part2(grid):
     scenic = 0
+    loc = (0, 0)
+    trees = {}
     for r in range(len(grid)):
         for c in range(len(grid[r])):
             currTree = grid[r][c]
@@ -136,9 +138,14 @@ def part2(grid):
                 if currTree <= grid[x][c]:
                     break
             scenic = max(scenic, left*right*up*down)
+            trees[(r+1, c+1)] = scenic
+    for key,value in trees.items():
+        if value == scenic:
+            loc = key
+            break
     print("\nPart Two: Consider each tree on your map. "
           + "What is the highest scenic score possible for any tree?"
-          + "\nANSWER: " + str(scenic))
+          + "\nANSWER: " + str(scenic) + " for the tree located at " + str(loc))
 
 def main():
     filepath = "/Users/tiffanylee/Downloads/Personal Projects/Advent_of_Code/2022/InputFiles_2022/Day08_Input.txt"
