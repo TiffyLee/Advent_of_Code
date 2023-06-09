@@ -12,6 +12,7 @@ experience dealing with signal-based systems, he convinced the other Elves that
 it would be okay to give you their one malfunctioning device - surely you'll
 have no problem fixing it. As if inspired by comedic timing, the device emits
 a few colorful sparks.
+
 To be able to communicate with the Elves, the device needs to lock on to their
 signal. The signal is a series of seemingly-random characters that the device
 receives one at a time. To fix the communication system, you need to add a
@@ -50,6 +51,7 @@ marker is detected?
 --- Part Two ---
 Your device's communication system is correctly detecting packets, but still
 isn't working. It looks like it also needs to look for messages.
+
 A start-of-message marker is just like a start-of-packet marker,
 except it consists of 14 distinct characters rather than 4.
 Here are the first positions of start-of-message markers for all of the
