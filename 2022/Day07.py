@@ -89,13 +89,13 @@ sum of the sizes of the files it contains, directly or indirectly.
 (Directories themselves do not count as having any intrinsic size.)
 The total sizes of the directories above can be found as follows:
 
-The total size of directory e is 584 because it contains a single file i of
+-The total size of directory e is 584 because it contains a single file i of
 size 584 and no other directories.
-The directory a has total size 94853 because it contains files f (size 29116),
+-The directory a has total size 94853 because it contains files f (size 29116),
 g (size 2557), and h.lst (size 62596), plus file i indirectly
 (a contains e which contains i).
-Directory d has total size 24933642.
-As the outermost directory, / contains every file. Its total size is 48381165,
+-Directory d has total size 24933642.
+-As the outermost directory, / contains every file. Its total size is 48381165,
 the sum of the size of every file.
 
 To begin, find all of the directories with a total size of at most 100000,
@@ -119,10 +119,10 @@ required by the update. Therefore, the update still requires a directory with
 total size of at least 8381165 to be deleted before it can run.
 To achieve this, you have the following options:
 
-Delete directory e, which would increase unused space by 584.
-Delete directory a, which would increase unused space by 94853.
-Delete directory d, which would increase unused space by 24933642.
-Delete directory /, which would increase unused space by 48381165.
+-Delete directory e, which would increase unused space by 584.
+-Delete directory a, which would increase unused space by 94853.
+-Delete directory d, which would increase unused space by 24933642.
+-Delete directory /, which would increase unused space by 48381165.
 
 Directories e and a are both too small; deleting them would not free up
 enough space. However, directories d and / are both big enough! Between these,
